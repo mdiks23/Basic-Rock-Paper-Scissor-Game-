@@ -17,49 +17,19 @@
   </h2>
   <div class="button-div">
   <button onclick="
-const computerMove= pickcomputerMove();
-  let result='';
-  
-  if(computerMove === 'Rock'){
-    result='Tie';
-  }else if(computerMove === 'Paper'){
-    result='You loose, try later';
-  }else{
-    result='Congrats! You win! ';
-  }
-console.log(result);
-
-alert(`You picked Rock. Computer picked ${computerMove} . The result is ${result}`);
-
-  ">Rock</button>
+  playGame('Rock')">Rock</button>
+  </div><div class="button-div">
+  <button onclick="
+  playGame('Paper') "
+ >Paper</button>
   </div><div class="button-div">
   <button onclick="
   
-const computerMove= pickcomputerMove();
-  
-  let result='';
-  
-  if(computerMove === 'Paper'){
-    result='Tie';
-  }else if(computerMove === 'Scissors'){
-    result='You loose, try later';
-  }else{
-    result='Congrats! You win! ';
-  }
-console.log(result);
-
-alert(`You picked Paper. Computer picked ${computerMove} . The result is ${result}`);
-  
-  ">Paper</button>
-  </div><div class="button-div">
-  <button onclick="
-  
- function playGame('Scissors');
+ playGame('Scissors')
   
   ">Scissors</button></div>
   </div>
   </section>
-  
   
   
   
