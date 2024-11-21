@@ -1,3 +1,4 @@
+let playerMove=;
 function playGame(playerMove) {
     const computerMove = pickcomputerMove();
     let result = '';
