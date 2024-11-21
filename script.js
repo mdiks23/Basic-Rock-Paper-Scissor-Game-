@@ -1,22 +1,36 @@
-function playGame(playermove){
-    const computerMove= pickcomputerMove();
- 
- 
-  let result='';
-  if(playerMove==='Scissors'){
-  if(computerMove === 'Scissors'){
-    result='Tie';
-  }else if(computerMove === 'Rock'){
-    result='You loose, try later';
-  }else{
-    result='Congrats! You win! ';
-  }
-console.log(result);
+function playGame(playerMove) {
+    const computerMove = pickcomputerMove();
+    let result = '';
 
-alert(`You picked Scissors. Computer picked ${computerMove} . The result is ${result}`);
-  }
-  }
-  
+    if (playerMove === 'Scissors') {
+        if (computerMove === 'Scissors') {
+            result = 'Tie';
+        } else if (computerMove === 'Rock') {
+            result = 'You lose, try later';
+        } else {
+            result = 'Congrats! You win!';
+        }
+    } else if (playerMove === 'Rock') {
+        if (computerMove === 'Rock') {
+            result = 'Tie';
+        } else if (computerMove === 'Paper') {
+            result = 'You lose, try later';
+        } else {
+            result = 'Congrats! You win!';
+        }
+    } else if (playerMove === 'Paper') {
+        if (computerMove === 'Paper') {
+            result = 'Tie';
+        } else if (computerMove === 'Scissors') {
+            result = 'You lose, try later';
+        } else {
+            result = 'Congrats! You win!';
+        }
+    }
+
+    console.log(result);
+    alert(`You picked ${playerMove}. Computer picked ${computerMove}. The result is ${result}`);
+}
 
    function pickcomputerMove(){
 
@@ -35,4 +49,4 @@ computerMove='Scissors';
   
   console.log(computerMove);
     return computerMove;
-   }
+}
